@@ -5,7 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Typscript Todo</title>
-    <script src="app.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+    <script type="module" src="app.js" defer></script>
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <div class="heading">
+        <h1>Typscript Todo</h1>
+      </div>
+      <form class="form">
+        <div class="input">
+          <li>
+            <input id="todo-input" placeholder="Enter todo" type="text" />
+          </li>
+          <li><input type="date" name="" id="todo-date" /></li>
+          <li><button type="submit" class="submit-btn">Add Todo</button></li>
+        </div>
+      </form>
+      <!-- todos goes here -->
+      <div class="todo"></div>
+    </div>
+  </body>
 </html>
